@@ -1,0 +1,11 @@
+- TS is a superset of javascript
+
+- TS requires TS compiler (which is itself written using TS) that transpiles into JS
+
+- tsc <filename> : compile ts file into js 
+
+- tsc <filename> --watch : starts compilation in watch mode
+
+- passing argument types func(param1: type, param2: type) {}
+
+- tsc --init : create tsconfig.json, configuration file for typescript which gives compiler various options to check

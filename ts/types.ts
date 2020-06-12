@@ -35,3 +35,32 @@ let noReturn = (): void => {
 let err = (): never => {
     throw Error('i am error');
 }
+
+// interface
+
+interface Car {
+    name: string,
+    price: number,
+};
+
+let doSomethingWithCar = (car: Car) => {
+    console.log('here do anything with car object');
+}
+
+// type
+
+type shape = {
+    x: number,
+    y: number,
+}
+
+// extend interface with type
+interface Square extends shape {
+    x: 14,
+    y: 14,
+}
+
+interface Rectangle extends shape {
+    x: 10,
+    y: 5,
+}
